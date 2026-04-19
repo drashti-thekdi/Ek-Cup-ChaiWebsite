@@ -22,5 +22,7 @@ export default defineConfig({
       },
     )],
 
-    base: '/Ek-Cup-ChaiWebsite/',
+     base: process.env.NODE_ENV === "production"
+    ? "/Ek-Cup-ChaiWebsite/"
+    : "/"
 })
