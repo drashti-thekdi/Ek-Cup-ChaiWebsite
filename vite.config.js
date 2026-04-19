@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: 
   [
     react(), 
+    
     tailwindcss(
       {
         theme: {
@@ -20,4 +21,6 @@ export default defineConfig({
         },
       },
     )],
+
+    base: '/Ek-Cup-ChaiWebsite/',
 })
